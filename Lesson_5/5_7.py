@@ -22,9 +22,7 @@ with codecs.open('test7.json', 'w', encoding= 'utf-8') as jf:
         line = f.read().split("\n")
         for i in line:
             i = i.split()
-            profit = int(i[2]) - int(i[3])
-            subjects[i[0]] = profit
-            if profit > 0:
+            profit = int(i[2]) - int(i[3])            if profit > 0:
                 k += profit
                 o += 1
             middle["средняя прибыль для всех фирм"] = k / o
